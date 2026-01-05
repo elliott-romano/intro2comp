@@ -5,7 +5,7 @@
   const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
   const state = {
-    theme: "dark",
+    theme: "paper",
     collapsed: {},
     expandAll: true
   };
@@ -32,7 +32,7 @@
   function applyTheme() {
     document.documentElement.setAttribute("data-theme", state.theme);
     const btn = $("#btnTheme");
-    if (btn) btn.textContent = `THEME: ${state.theme.toUpperCase()}`;
+    if (btn) btn.textContent = `THEME: ${state.theme === "paper" ? "LIGHT" : "DARK"}`;
   }
 
   function setSectionCollapsed(sectionEl, collapsed) {
