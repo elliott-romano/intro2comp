@@ -123,7 +123,7 @@ a:hover{ border-bottom-color: var(--fg); }
 }
 
 .nav a{ color: var(--muted); border-bottom-color: transparent; }
-.nav a:hover{ color: var(--fg); }
+.nav a:hover{ color: var(--fg); border-bottom-color: var(--fg); }
 
 .section{
   border: 1px solid var(--line);
