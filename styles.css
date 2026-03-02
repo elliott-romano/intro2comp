@@ -224,6 +224,35 @@ html[data-theme="paper"] .sectionHead:hover{
   line-height: 1.45;
 }
 
+.studentGrid{
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media (min-width: 640px){
+  .studentGrid{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px){
+  .studentGrid{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.studentVideo{
+  border: 1px solid var(--line);
+  padding: 6px;
+}
+
+.studentVideo video{
+  width: 100%;
+  display: block;
+  background: #000;
+}
+
 .footerLine{
   padding: 12px;
   font-size: 12px;
